@@ -1,9 +1,9 @@
 document.getElementById('getServersBtn').addEventListener('click', function() {
-    // رابط السيرفر سيسكام
-    const serverURL = "https://github.com/ala44k/CCCamSouf/blob/main/cccam.txt";
-    
-    // عرض الرابط كـ "رابط" فقط
+    // يمكننا إضافة رسالة بديلة بدلاً من الرابط
+    const serverMessage = "141.94.250.79 28000 cccamsouf cccamsouf";
+ 
+    // عرض النص في العنصر
     const serverLinkDiv = document.getElementById('serverLink');
     serverLinkDiv.style.display = "block";
-    serverLinkDiv.innerHTML = `links: <a href="${serverURL}" target="_blank">ici</a>`;
+    serverLinkDiv.innerHTML = serverMessage;
 });
